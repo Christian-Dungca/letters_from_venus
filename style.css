@@ -1,0 +1,134 @@
+/* Font Families
+
+font-family: 'Fondamento', cursive;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Quattrocento Sans', sans-serif;
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gradient {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    -45deg,
+    #fff 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0.7) 45%,
+    rgba(0, 0, 0, 0.8)  50%,
+    rgba(0, 0, 0, 0.7) 55%,
+    rgba(0, 0, 0, 0.5) 60%,
+    #fff 80%
+  );
+  opacity: 0.4;
+  z-index: 10;
+}
+
+.top {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 30rem;
+  /* padding-top: 3rem; */
+  height: 65%;
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image-container {
+  width: 29rem;
+  height: 68%;
+  border-radius: 14rem;
+  background-color: lightgreen;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./assets/paper-airplane.jpeg");
+  background-size: cover;
+  /* testing */
+  min-width: 25rem;
+  /* max-width: 60rem; */
+  min-height: 27rem;
+}
+
+svg {
+  /* background-color: lightgoldenrodyellow; */
+  width: 50%;
+  min-width: 50rem;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: 80rem;
+  overflow: visible;
+}
+
+svg text {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-size: 18rem;
+}
+
+.text-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  /* background-color: brown; */
+  text-align: center;
+}
+
+.main > * {
+  line-height: 140%;
+}
+
+.text-container .main h2 {
+  /* background-color: green; */
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.text-container .main h3 {
+  /* background-color: green; */
+  font-family: "Fondamento", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.text-container a {
+  text-decoration: none;
+  color: black;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
